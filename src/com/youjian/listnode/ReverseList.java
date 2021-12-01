@@ -2,7 +2,7 @@ package com.youjian.listnode;
 
 public class ReverseList {
 
-    public ListNode reverseList(ListNode head) {
+    public static ListNode reverseList(ListNode head) {
         if (head == null || head.next == null) {
             return head;
         }
@@ -16,6 +16,6 @@ public class ReverseList {
             prev = curr;
             curr = temp;
         }
-        return curr;
+        return prev;
     }
 }
